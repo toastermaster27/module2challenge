@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Student Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+
+  <nav>
+    <button onclick="scrollFunction1()"> About </button>
+    <button onclick="scrollFunction2()"> Applications </button>
+    <button onclick="scrollFunction3()"> Contact </button>
+  </nav>
+
+  <body>
+    <header>
+      <h1>Morgan Crippin</h1>
+      <h2>
+        Full Stack Web Development Student
+      </h2>
+      <img id="studentphoto" src="./assets/images/photo.jpg" width = "175" height = "200" alt="photo of student" />
+    </header>
+
+    <main>
+
+      <div id="el1">
+        <h2>About Me</h2> </div>
+        <section>
+          <p id="about">
+            I am a part-time student ag MSU's Coding Bootcamp. I am hoping to use my skills from
+            this class to further my career and knowledge. I have experience in Python, C#, and now
+            I am learning to be a full-stack web developer.
+          </p>
+        </section>
+      <div id="el2">
+        <h2>Applications</h2> </div>
+    
+    </div>
+      <div class="avatar">
+      </div>
+      <script>
+        function scrollFunction1() {
+          let e = document.getElementById("el1");
+          e.scrollIntoView({
+            block: 'start',
+            behavior: 'smooth',
+            inline: 'start'
+          });
+        }
+        function scrollFunction2() {
+          let e = document.getElementById("el2");
+          e.scrollIntoView({
+            block: 'end',
+            behavior: 'smooth',
+            inline: 'end'
+          });
+        }
+        function scrollFunction3() {
+          let e = document.getElementById("el3");
+          e.scrollIntoView({
+            block: 'end',
+            behavior: 'smooth',
+            inline: 'end'
+          });
+        }
+      </script>
+    </main>
+
+    <section>
+      <img id="calculator" src="./assets/images/calculator.png" />
+      <img id="website" src="./assets/images/website.jpg" />
+    </section>
+
+    <footer>
+      <h3>
+        <h4>Contact</h4>
+        <table width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+              <td>
+                  <table cellspacing="3" cellpadding="3">
+                      <tr>
+                          <td class=”button” bgcolor="#ffc0cb">
+                              <a  href="mailto: morgancrippin@gmail.com" >
+                                  Email
+                              </a>
+                          </td>
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+      </h3>
+      <h3>
+        <table width="100%" cellspacing="0" cellpadding="0">
+          <tr>
+              <td>
+                  <table cellspacing="3" cellpadding="3">
+                      <tr>
+                          <td class=”button” bgcolor="#ffc0cb">
+                              <a  href="instagram.com/morgancrippin" >
+                                  Instagram
+                              </a>
+                          </td>
+                      </tr>
+                  </table>
+              </td>
+          </tr>
+        </table>
+      </h3>
+      <div id="el3">
+      </div>
+    </footer>
+  </body>
+</html>
